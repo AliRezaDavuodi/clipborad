@@ -1,0 +1,40 @@
+.about {
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 8rem;
+
+    &__picture-box {
+
+        &--computer {
+            grid-column: 1/3;
+            overflow: hidden;
+        }
+
+        &--device {
+            grid-column: 2/4;
+        }
+    }
+
+    &__picture {
+        width: 105%;
+        transform: translateX(-5rem);
+    }
+
+    &__details {
+        grid-column: 3/5;
+        padding-top: 5rem;
+
+        display: grid;
+        grid-row-gap: 5rem;
+        grid-template-rows: repeat(3, min-content);
+    }
+
+    
+
+    &__heading {
+        width: 50%;
+        grid-column: 1 / -1;
+    }
+
+}

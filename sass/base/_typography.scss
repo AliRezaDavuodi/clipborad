@@ -1,28 +1,72 @@
 .heading__primary {
-    @include flexbox;
-    flex-direction: column;
-    justify-content: center;
 
     width: 50%;
 
     &--main {
-        font-size: 3.5rem;
+        font-size: 4.1rem;
         font-weight: 400;
-        word-spacing: 2px;
+        word-spacing: 3.5px;
+        display: inline-block;
 
         animation: moveLeft 1s .3s ease backwards;
 
     }
 
     &--sub {
-        font-size: 1.3rem;
+        font-size: 1.8rem;
         font-weight: 600;
-        word-spacing: 1px;
-        letter-spacing: 1px;
-
+        display: inline-block;
         color: $Grayish-Blue;
-        
+
         animation: moveRight 1s .3s ease backwards;
+    }
+}
+
+.heading__secondary {
+
+    &--main {
+        font-size: 3.5rem;
+        font-weight: 400;
+        word-spacing: 3.5px;
+        display: block;
+
 
     }
+
+    &--sub {
+        font-size: 1.7rem;
+        font-weight: 600;
+        display: block;
+        color: $Grayish-Blue;
+
+    }
+
+}
+
+
+.heading__tertiary {
+
+    &--main {
+        font-size: 2.5rem;
+        font-weight: 400;
+        word-spacing: 3.5px;
+        display: block;
+
+    }
+
+    &--sub {
+        font-size: 1.4rem;
+        font-weight: 600;
+        color: $Grayish-Blue;
+        display: block;
+    }
+
+}
+
+
+.paragraph {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: $Grayish-Blue;
+    padding: 0 5rem;
 }

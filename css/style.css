@@ -67,25 +67,54 @@ body {
 }
 
 .heading__primary {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
   width: 50%;
 }
 .heading__primary--main {
-  font-size: 3.5rem;
+  font-size: 4.1rem;
   font-weight: 400;
-  word-spacing: 2px;
+  word-spacing: 3.5px;
+  display: inline-block;
   animation: moveLeft 1s 0.3s ease backwards;
 }
 .heading__primary--sub {
-  font-size: 1.3rem;
+  font-size: 1.8rem;
   font-weight: 600;
-  word-spacing: 1px;
-  letter-spacing: 1px;
+  display: inline-block;
   color: #9fabb2;
   animation: moveRight 1s 0.3s ease backwards;
+}
+
+.heading__secondary--main {
+  font-size: 3.5rem;
+  font-weight: 400;
+  word-spacing: 3.5px;
+  display: block;
+}
+.heading__secondary--sub {
+  font-size: 1.7rem;
+  font-weight: 600;
+  display: block;
+  color: #9fabb2;
+}
+
+.heading__tertiary--main {
+  font-size: 2.5rem;
+  font-weight: 400;
+  word-spacing: 3.5px;
+  display: block;
+}
+.heading__tertiary--sub {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #9fabb2;
+  display: block;
+}
+
+.paragraph {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #9fabb2;
+  padding: 0 5rem;
 }
 
 .mt-s {
@@ -212,6 +241,10 @@ body {
   text-align: center;
 }
 
+.ma {
+  margin: 0 auto;
+}
+
 .btn-box {
   padding: 1rem 2rem;
   font-size: 1.5rem;
@@ -245,13 +278,67 @@ body {
   background-color: #6173ff;
 }
 
+.card-box {
+  width: 50%;
+}
+.card-box--center {
+  text-align: center;
+}
+
+.about {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 8rem;
+}
+.about__picture-box--computer {
+  grid-column: 1/3;
+  overflow: hidden;
+}
+.about__picture-box--device {
+  grid-column: 2/4;
+}
+.about__picture {
+  width: 105%;
+  transform: translateX(-5rem);
+}
+.about__details {
+  grid-column: 3/5;
+  padding-top: 5rem;
+  display: grid;
+  grid-row-gap: 5rem;
+  grid-template-rows: repeat(3, min-content);
+}
+.about__heading {
+  width: 50%;
+  grid-column: 1/-1;
+}
+
+.featurs__card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 10rem;
+}
+.featurs__card--details {
+  margin-top: 7.5rem;
+}
+.featurs__card--social {
+  margin-top: 15rem;
+}
+.featurs__social {
+  margin-top: 15rem;
+}
+.featurs__photo {
+  width: 50%;
+}
+
 .header {
   height: 95vh;
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  background-image: url(../../images/bg-header-desktop.png);
+  background-image: url(../images/bg-header-desktop.png);
   background-size: cover;
   background-position: top;
 }
