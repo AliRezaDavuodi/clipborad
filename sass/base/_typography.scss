@@ -1,0 +1,28 @@
+.heading__primary {
+    @include flexbox;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 50%;
+
+    &--main {
+        font-size: 3.5rem;
+        font-weight: 400;
+        word-spacing: 2px;
+
+        animation: moveLeft 1s .3s ease backwards;
+
+    }
+
+    &--sub {
+        font-size: 1.3rem;
+        font-weight: 600;
+        word-spacing: 1px;
+        letter-spacing: 1px;
+
+        color: $Grayish-Blue;
+        
+        animation: moveRight 1s .3s ease backwards;
+
+    }
+}

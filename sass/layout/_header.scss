@@ -1,0 +1,19 @@
+.header{
+    height: 95vh;
+
+    @include flexbox;
+    flex-direction: column;
+    justify-content: center;
+
+    background-image: url(../../images/bg-header-desktop.png);
+    background-size: cover;
+    background-position: top;
+
+    &__logo{
+        width: 7rem;
+        height: 7rem;
+        
+        animation: moveDown 1.5s ease backwards;
+    }
+
+}
