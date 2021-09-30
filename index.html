@@ -1,28 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+
   <title>Frontend Mentor | Clipboard landing page</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
+
 <body>
 
-  A history of everything you copy
+  <header class="header">
+    <img src="images/logo.svg" alt="logo" class="header__logo ">
+    <h1 class="heading__primary mt-l tc">
+      <span class="heading__primary--main mb-s">A history of everything you copy</span>
+      <span class="heading__primary--sub"> Clipboard allows you to track and organize everything you
+        copy. Instantly access your clipboard on all your devices.</span>
+    </h1>
+    <div class="btn-box btn-animate mt-h">
+      <a href="#" class="btn btn--green mr-s">Download for iOS</a>
+      <a href="#" class="btn btn--blue ml-s">Download for Mac</a>
+    </div>
+  </header>
 
-  Clipboard allows you to track and organize everything you 
-  copy. Instantly access your clipboard on all your devices.
 
-  Download for iOS
-  Download for Mac
+
+
+
+  <!-- 
 
   Keep track of your snippets
 
@@ -75,13 +88,19 @@
   Contact Us
   Privacy Policy
   Press Kit
-  Install Guide
-  
+  Install Guide -->
+
   <footer>
-    <p class="attribution">
+
+
+
+
+
+    <!--   <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
       Coded by <a href="#">Your Name Here</a>.
-    </p>
+    </p> -->
   </footer>
 </body>
+
 </html>
