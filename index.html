@@ -6,14 +6,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <!-- wow cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js">
+
+  <!-- animated cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+  <!-- google font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <!-- my css -->
   <link rel="stylesheet" href="css/style.css">
 
   <title>Frontend Mentor | Clipboard landing page</title>
-
 </head>
 
 <body>
@@ -22,7 +32,7 @@
     <img src="images/logo.svg" alt="logo" class="header__logo">
     <h1 class="heading__primary mt-l tc">
       <span class="heading__primary--main mb-s">A history of everything you copy</span>
-      <span class="heading__primary--sub"> Clipboard allows you to track and organize everything you
+      <span class="heading__primary--sub ma"> Clipboard allows you to track and organize everything you
         copy. Instantly access your clipboard on all your devices.</span>
     </h1>
     <div class="btn-box btn-animate mt-h">
@@ -35,22 +45,25 @@
 
     <section class="about">
 
-      <h2 class="heading__secondary about__heading ma tc">
+      <h2 class="heading__secondary about__heading ma tc wow animate__fadeInDown" data-wow-duration="2s"
+        data-wow-offset="70">
         <span class="heading__secondary--main">Keep track of your snippets</span>
         <span class="heading__secondary--sub">
           Clipboard instantly stores any item you copy in the cloud,
           meaning you can access your snippets immediately on all your
           devices. Our Mac and iOS apps will help you organize everything.
         </span>
+
       </h2>
 
-      <div class="about__picture-box about__picture-box--computer">
-        <img class="about__picture" src="images/image-computer.png" alt="computer image">
+      <div class="about__picture-box about__picture-box--computer wow animate__fadeInLeft" data-wow-duration="2s"
+        data-wow-offset="70">
+        <img class="about__picture ml-re" src="images/image-computer.png" alt="computer image">
       </div>
 
-      <div class="about__details">
+      <div class="about__details  wow animate__fadeInUp" data-wow-duration="2s" data-wow-offset="70">
 
-        <div class="card-box">
+        <div class="card">
           <h3 class="heading__tertiary">
             <span class="heading__tertiary--main">Quick Search</span>
             <span class="heading__tertiary--sub">Easily search your snippets by content, category, web address,
@@ -58,14 +71,14 @@
           </h3>
         </div>
 
-        <div class="card-box">
+        <div class="card">
           <h3 class="heading__tertiary">
             <span class="heading__tertiary--main"> iCloud Sync</span>
             <span class="heading__tertiary--sub">Instantly saves and syncs snippets across all your devices.</span>
           </h3>
         </div>
 
-        <div class="card-box">
+        <div class="card">
           <h3 class="heading__tertiary">
             <span class="heading__tertiary--main">Complete History</span>
             <span class="heading__tertiary--sub">Retrieve any snippets from the first moment you started using the
@@ -76,7 +89,8 @@
 
       </div>
 
-      <h2 class="heading__secondary about__heading ma tc">
+      <h2 class="heading__secondary about__heading ma tc   wow animate__fadeInRight" data-wow-duration="2s"
+        data-wow-offset="70">
         <span class="heading__secondary--main">Access Clipboard anywhere</span>
         <span class="heading__secondary--sub">
           Whether you’re on the go, or at your computer, you can access all your Clipboard
@@ -84,15 +98,16 @@
         </span>
       </h2>
 
-      <div class="about__picture-box about__picture-box--device">
-        <img class="about__picture " src="images/image-devices.png" alt="devices image">
+      <div class="about__picture-box about__picture-box--device wow animate__fadeInTopLeft" data-wow-duration="2s"
+        data-wow-offset="70">
+        <img class="about__picture" src="images/image-devices.png" alt="devices image">
       </div>
 
     </section>
 
     <section class="featurs">
 
-      <h2 class="heading__secondary mt-h tc">
+      <h2 class="heading__secondary mt-h tc  wow animate__fadeInLeft" data-wow-duration="2s" data-wow-offset="70">
         <span class="heading__secondary--main">
           Supercharge your workflow
         </span>
@@ -101,9 +116,9 @@
         </span>
       </h2>
 
-      <div class="featurs__card featurs__card--details">
-        <div class="card-box tc">
-          <img class="features__photo" src="images/icon-blacklist.svg" alt="icon blacklist">
+      <div class="featurs__cards featurs__cards wow animate__flipInX" data-wow-duration="2s" data-wow-offset="70">
+        <div class="card">
+          <img class="card__photo" src="images/icon-blacklist.svg" alt="icon blacklist">
           <h3 class="heading__tertiary">
             <span class="heading__tertiary--main">Create blacklists</span>
           </h3>
@@ -111,8 +126,8 @@
             excluding certain sources.</p>
         </div>
 
-        <div class="card-box tc">
-          <img class="features__photo" src="images/icon-text.svg" alt="icon blacklist">
+        <div class="card">
+          <img class="card__photo" src="images/icon-text.svg" alt="icon blacklist">
           <h3 class="heading__tertiary">
             <span class="heading__tertiary--main">Plain text snippets</span>
           </h3>
@@ -122,8 +137,8 @@
           </p>
         </div>
 
-        <div class="card-box tc">
-          <img class="features__photo" src="images/icon-preview.svg" alt="icon blacklist">
+        <div class="card">
+          <img class="card__photo" src="images/icon-preview.svg" alt="icon blacklist">
           <h3 class="heading__tertiary">
             <span class="heading__tertiary--main">Sneak preview</span>
           </h3>
@@ -132,28 +147,35 @@
         </div>
       </div>
 
-      <div class="featurs__card featurs__card--brand">
-        <div class="card-box tc">
-          <img class="featurs__photo" src="images/logo-google.png" alt="icon blacklist">
-        </div>
-        <div class="card-box tc">
-          <img class="featurs__photo" src="images/logo-ibm.png" alt="icon blacklist">
-        </div>
-        <div class="card-box tc">
-          <img class="featurs__photo" src="images/logo-microsoft.png" alt="icon blacklist">
-        </div>
-        <div class="card-box tc">
-          <img class="featurs__photo" src="images/logo-hp.png" alt="icon blacklist">
-        </div>
-        <div class="card-box tc">
-          <img class="featurs__photo" src="images/logo-vector-graphics.png" alt="icon blacklist">
-        </div>
-
-
-
     </section>
 
-    <section class="download tc">
+    <section class="brands  wow animate__backInLeft" data-wow-duration="1s" data-wow-offset="150">
+      <div class="brands__cards">
+        <div class="brands__logo--box">
+          <img class="brands__logo" src="images/logo-google.png" alt="icon blacklist">
+        </div>
+        <div class="brands__logo--box">
+          <img class="brands__logo" src="images/logo-ibm.png" alt="icon blacklist">
+        </div>
+        <div class="brands__logo--box">
+          <img class="brands__logo" src="images/logo-microsoft.png" alt="icon blacklist">
+        </div>
+        <div class="brands__logo--box">
+          <img class="brands__logo" src="images/logo-hp.png" alt="icon blacklist">
+        </div>
+        <div class="brands__logo--box">
+          <img class="brands__logo" src="images/logo-vector-graphics.png" alt="icon blacklist">
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+
+
+    <section class="download tc vh wow animate__jackInTheBox" data-wow-duration="2s" data-wow-offset="250">
 
       <h2 class="heading__secondary about__heading ma tc">
         <span class="heading__secondary--main">Clipboard for iOS and Mac OS</span>
@@ -175,15 +197,7 @@
   </main>
 
 
-  <!-- 
-
-  
-  
-  
-  
-   -->
-
-  <footer class="footer">
+  <footer class="footer wow animate__fadeInLeft" data-wow-duration="1s" data-wow-offset="20">
 
     <img src="images/logo.svg" alt="" class="footer__logo">
 
@@ -219,19 +233,16 @@
 
 
     <div class="footer__social">
-          <a href="#" class="footer__link">
-            <img src="images/icon-facebook.svg" alt="" class="footer__icon">
-          </a>
-          <a href="#" class="footer__link">
-            <img src="images/icon-twitter.svg" alt="" class="footer__icon">
-          </a>
-          <a href="#" class="footer__link">
-            <img src="images/icon-instagram.svg" alt="" class="footer__icon">
-          </a>
+      <a href="#" class="footer__link">
+        <img src="images/icon-facebook.svg" alt="" class="footer__icon">
+      </a>
+      <a href="#" class="footer__link">
+        <img src="images/icon-twitter.svg" alt="" class="footer__icon">
+      </a>
+      <a href="#" class="footer__link">
+        <img src="images/icon-instagram.svg" alt="" class="footer__icon">
+      </a>
     </div>
-
-
-
 
 
     <!--   <p class="attribution">
@@ -240,5 +251,10 @@
     </p> -->
   </footer>
 </body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+<script>
+  new WOW().init();
+</script>
 
 </html>
