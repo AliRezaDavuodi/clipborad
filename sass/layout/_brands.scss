@@ -12,6 +12,10 @@
 
         @include respond(bp-smallest) {
                 width: 100%;
+                
+                &:not(:last-child){
+                    margin-bottom: 5rem;
+                }
         }
 
         @include respond(bp-medium) {

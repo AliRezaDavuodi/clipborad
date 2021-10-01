@@ -4,15 +4,22 @@
   "description": "![Design preview for the Clipboard landing page coding challenge](./design/desktop-preview.jpg)",
   "main": "index.js",
   "scripts": {
-    "sass": "sass -w sass/main.scss:css/style.css",
+    "sass": "node-sass sass/main.scss css/style.css -w",
     "server": "live-server",
-    "start": "npm-run-all --parallel sass server"
+    "start": "npm-run-all --parallel sass server",
+
+    "compile": "node-sass sass/main.scss css/style.comp.css",
+    "autoprefixer": "postcss css/style.comp.css --use autoprefixer css/style.css",
+    "compress": "node-sass css/style.comp.css css/style.css --output-style compressed",
+    "build": "npm-run-all compile autoprefixer compress"
   },
   "author": "AliReza",
   "license": "ISC",
   "devDependencies": {
+    "autoprefixer": "^10.3.6",
     "node-sass": "^6.0.1",
-    "npm-run-all": "^4.1.5"
+    "npm-run-all": "^4.1.5",
+    "postcss-cli": "^9.0.1"
   },
   "dependencies": {
     "animate.css": "^4.1.1",
