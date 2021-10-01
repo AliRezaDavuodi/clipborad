@@ -1,67 +1,99 @@
 .footer {
     @include flexbox;
-
     padding: 2rem 10rem;
     margin-top: 10rem;
-
     background-color: $Gray-light;
+
+    @include respond(bp-smallest) {
+        flex-direction: column;
+    }
+
+    @include respond(bp-medium) {
+        flex-direction: row;
+    }
 
     &__logo {
         width: 5.5rem;
         height: 5.5rem;
-        margin-right: 8rem;
+
+        @include respond(bp-smallest) {
+            margin-right: 0rem;
+        }
+
+        @include respond(bp-medium) {
+            margin-right: 8rem;
+        }
     }
 
     &__nav {
-        margin-right: auto;
+        @include respond(bp-smallest) {
+            margin: 3rem 0; // create an space to top and bottom of navbar when it's horizental 
+        }
+
+        @include respond(bp-medium) {
+            margin: 0 auto 0 0; // create an space to right and top of navbar when it's vertical 
+        }
     }
 
     &__list {
+        width: 45vw;
         list-style: none;
-
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-column-gap: 15rem;
-        grid-row-gap: 1rem;
-    }
+        grid-gap: 1.3rem;
 
-    &__item {
-        padding: .6rem 0;
-       
+        @include respond(bp-smallest) {
+            grid-template-columns: 1fr;
+            justify-items: center;
+        }
+
+        @include respond(bp-medium) {
+            justify-items: start;
+            grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+
+        }
     }
 
     &__link {
 
         &:link,
         &:visited {
+            display: inline-block;
             text-decoration: none;
             color: $Dark-Grayish-Blue;
             font-size: 1.5rem;
             font-weight: 600;
             transition: transform .2s;
-            display: inline-block;
 
-            &:not(:last-child){
+            @include respond(bp-smallest) {
+                padding: 0rem;
+            }
+
+            @include respond(bp-medium) {
+                padding: 1.5rem;
+            }
+
+            &:not(:last-child) {
                 margin-right: 1.5rem;
             }
         }
 
-        &:hover{
+        &:hover {
             transform: translateY(-.5rem) scale(1.05);
         }
 
-        &:active{
+        &:active {
             transform: translateY(-.2rem) scale(1.02);
         }
     }
 
-    &__social {}
+    &__social {
+
+        @include flexbox;
+    }
 
     &__icon {
         cursor: pointer;
-        
-
-
-        
+        width: 2.5rem;
+        height: 2.5rem;
     }
 }

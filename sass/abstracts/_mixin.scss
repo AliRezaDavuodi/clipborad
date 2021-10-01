@@ -2,3 +2,36 @@
     display: flex;
     align-items: center;
 }
+
+@mixin respond($bp) {
+    @if $bp == bp-smallest {
+        @media only screen and (min-width : 23.43em) { // 375px
+            @content;
+        }
+    }
+    @if $bp == bp-small {
+        @media only screen and (min-width : 30em) { // 480px
+            @content;
+        }
+    }
+    @if $bp == bp-medium {
+        @media only screen and (min-width : 37.5em) { // 600px
+            @content;
+        }
+    }
+    @if $bp == bp-large {
+        @media only screen and (min-width : 53.12em) { //850px
+            @content;
+        }
+    }
+    @if $bp == bp-larger {
+        @media only screen and (min-width : 68.75em) { // 1100px
+            @content;
+        }
+    }
+    @if $bp == bp-largest {
+        @media only screen and (min-width : 90em) { // 1440px
+            @content;
+        }
+    }
+}

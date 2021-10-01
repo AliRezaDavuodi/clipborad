@@ -1,27 +1,9 @@
 .featurs {
-
-
-    &__card {
+    &__cards {
         @include flexbox;
         justify-content: center;
-        padding: 0 10rem;
-
-        &--details {
-            margin-top: 7.5rem;
-
-        }
-
-        &--brand {
-            margin-top: 15rem;
-        }
-
-    }
-
-    &__brand {
-        margin-top: 15rem;
-    }
-
-    &__photo {
-        width: 50%;
+        flex-wrap: wrap;
+        padding: 1rem 2rem;
+        margin: 10rem 0;
     }
 }

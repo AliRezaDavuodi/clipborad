@@ -7,8 +7,21 @@
 }
 
 html{
-    font-size: 62.5%;  // 1rem => 10px
     box-sizing: border-box;
+
+    @include respond(bp-smallest){
+        font-size: 43.75%; // 7px
+    }
+    @include respond(bp-small){
+        font-size: 50%; // 8px
+    }
+
+    @include respond(bp-larger){
+        font-size: 62.5%;  // 1rem => 10px
+    }
+    @include respond(bp-largest){
+        font-size: 75%;  // 1rem => 12px
+    }
 }
 
 body{

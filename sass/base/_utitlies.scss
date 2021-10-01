@@ -101,12 +101,19 @@
     margin:3rem 0;
 }
 
+.ml-re{
+    margin-left: -3rem;
+}
+
 
 // CENTERING
 .tc{
-    text-align: center;
+    text-align: center !important;
 }
 
 .ma{
     margin: 0 auto;
 }
+
+
+

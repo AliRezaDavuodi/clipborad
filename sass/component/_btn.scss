@@ -1,7 +1,16 @@
 .btn-box {
     padding: 1rem 2rem;
-
     font-size: 1.5rem;
+
+    @include respond(bp-smallest) {
+        @include flexbox;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    @include respond(bp-medium) {
+        display: block;
+    }
 }
 
 .btn-animate {
@@ -13,16 +22,19 @@
     &:link,
     &:visited {
         text-decoration: none;
-
         padding: 1rem 3rem;
-
         border-radius: 100px;
-
         color: $white;
-
         display: inline-block;
-
         transition: all .3s;
+
+        @include respond(bp-smallest) {
+            margin: 1rem 0;
+        }
+
+        @include respond(bp-medium) {
+            margin: 0 1rem;
+        }
     }
 
     &:hover {
@@ -31,20 +43,16 @@
 
     &:active {
         transform: translateY(-.3rem);
-        
         box-shadow: 0 1.5rem 3rem rgba($dark, .2);
     }
 
     &--green {
         background-color: $Strong-Cyan;
         box-shadow: 0 1.5rem 3rem rgba($Strong-Cyan, .4);
-
     }
 
     &--blue {
         background-color: $Light-Blue;
         box-shadow: 0 1.5rem 3rem rgba($Light-Blue, .4);
-
     }
-
 }

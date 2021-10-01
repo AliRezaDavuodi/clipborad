@@ -1,14 +1,28 @@
 .about {
-
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: 8rem;
+    grid-gap: 5rem;
+    justify-items: center;
 
     &__picture-box {
 
+        @include respond(bp-smallest) {
+            height: 25rem;
+        }
+
+        @include respond(bp-large) {
+            height: 50rem;
+        }
+
         &--computer {
-            grid-column: 1/3;
-            overflow: hidden;
+
+            @include respond(bp-smallest) {
+                grid-column: 1 / -1;
+            }
+
+            @include respond(bp-large) {
+                grid-column: 1/3;
+            }
         }
 
         &--device {
@@ -17,24 +31,46 @@
     }
 
     &__picture {
-        width: 105%;
-        transform: translateX(-5rem);
+        height: 100%;
+
+        @include respond(bp-smallest) {
+            margin: 0;
+        }
+
+        @include respond(bp-large) {
+            margin-right: 4.5rem;
+        }
     }
 
     &__details {
         grid-column: 3/5;
-        padding-top: 5rem;
-
         display: grid;
-        grid-row-gap: 5rem;
         grid-template-rows: repeat(3, min-content);
-    }
+        margin-top: -4rem;
 
-    
+        @include respond(bp-smallest) {
+            grid-column: 2 / 4;
+        }
+
+        @include respond(bp-large) {
+            grid-column: 3/5;
+        }
+
+        .card {
+
+            @include respond(bp-smallest) {
+                text-align: center;
+            }
+
+            @include respond(bp-large) {
+                text-align: left;
+            }
+        }
+    }
 
     &__heading {
         width: 50%;
         grid-column: 1 / -1;
+        text-align: left;
     }
-
 }

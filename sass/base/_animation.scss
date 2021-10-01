@@ -7,9 +7,7 @@
         opacity: 1;
         transform: translateY(0);
     }
-    
 }
-
 
 @keyframes moveUp {
     0%{
@@ -25,7 +23,6 @@
     }
 }
 
-
 @keyframes moveLeft {
     0%{
         opacity: 0;
@@ -39,7 +36,6 @@
         transform: translateX(0);
     }
 }
-
 
 @keyframes moveRight {
     0%{
