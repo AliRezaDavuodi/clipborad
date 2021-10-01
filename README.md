@@ -1,7 +1,7 @@
 ### Links
 [solution URL here](https://github.com/AliRezaDavuodi/clipborad/blob/master/screenShot/screenshot.png)
 
-[Visit my site live on NETLIFY](frontendmentor-clipboard.netlify.app)
+[Visit my site live on NETLIFY](https://frontendmentor-clipboard.netlify.app)
 
 
 ## My process
